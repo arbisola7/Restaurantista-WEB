@@ -69,9 +69,9 @@ footer {
   color: white;
 }
 
-/* Shtoni stilin për fundin e faqes */
+
 .footer-bottom {
-  background-color: #FF8000; /* Ngjyra e sfondit për fundin e faqes */
+  background-color: #FF8000; 
   color: white;
   padding: 15px 0;
   text-align: center;
