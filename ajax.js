@@ -1,30 +1,30 @@
 document
   .getElementById("newsletter-form")
   .addEventListener("submit", function (event) {
-    event.preventDefault(); // Parandalon rifreskimin e faqes
+    event.preventDefault();
 
-    const email = document.getElementById("emailaddress").value.trim(); // Merr emailin e futur nga përdoruesi
-    const newsletter = document.getElementById("newsletter").checked; // Kontrollon nëse kutia e newsletter është shënuar
+    const email = document.getElementById("emailaddress").value.trim(); 
+    const newsletter = document.getElementById("newsletter").checked; 
 
-    // Kontroll i thjeshtë për të siguruar që emaili nuk është bosh
+
     if (email === "") {
         alert("Please enter a valid email");
-        return; // Ndërpret funksionin nëse emaili është bosh
+        return; 
     }
 
-    // Krijon një objekt me të dhënat e formularit
+ 
     const data = {
         email: email,
         newsletter: newsletter
     };
 
-    // Ruajtja e të dhënave në localStorage si një string JSON
+
     localStorage.setItem('formSubmission', JSON.stringify(data));
 
-    // Opsionale: Shfaqni një mesazh suksesi
+  
     alert("Form data has been saved to localStorage.");
 
-    // Krijon dhe ekzekuton kërkesën AJAX për të dërguar të dhënat
+   
     $.ajax({
         url: '/submit-form.js',
         type: 'POST',
@@ -53,7 +53,7 @@ function showMessage(message, type) {
         countdown--;
         if (countdown <= 0) {
             clearInterval(countdownInterval);
-            location.reload(); // Rifreskimi i faqes pas përfundimit të numërimit
+            location.reload(); 
         }
-    }, 1000); // Countdown every second
+    }, 1000); 
 }
