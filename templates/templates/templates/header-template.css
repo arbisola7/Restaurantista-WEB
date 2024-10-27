@@ -1,4 +1,4 @@
-/* Stilet për navigimin në desktop */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -50,13 +50,13 @@ nav {
 }
 
 .burger {
-    display: none; /* Fshihet në desktop */
+    display: none; 
 }
 
-/* Media query për dizajnin responsive */
+
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: none; /* Fshihet në mobile dhe shfaqet me burger menu */
+        display: none; 
     }
 
     .burger {
@@ -64,7 +64,6 @@ nav {
         cursor: pointer;
     }
 
-    /* Stilizimi i ikonës burger */
     .burger div {
         width: 25px;
         height: 3px;
@@ -73,7 +72,7 @@ nav {
         transition: all 0.3s ease;
     }
 
-    /* Shfaqja e menu-së burger në modalitetin aktiv */
+   
     .nav-active .line1 {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -86,13 +85,12 @@ nav {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    /* Stilizimi për menynë e navigimit kur është aktive në mobile */
     .nav-active ~ .nav-links {
         display: flex;
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 60px; /* Rregulloje sipas nevojës për të shmangur mbivendosjen */
+        top: 60px;
         left: 0;
         right: 0;
         background-color: #fff;
