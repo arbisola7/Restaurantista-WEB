@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link rel="stylesheet" href="templates/templates/templates/header-template.css">
+<link rel="stylesheet" href="templates/templates/templates/footer-template.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Placeholder for header -->
+    <div id="header-placeholder"></div>
+    
+    <main>
+        <section class="restaurant-section">
+            <div id="restaurant-info">
+                <h1>Restaurantista</h1>
+                <h3>Your Digital Restaurant</h3>
+                <button class="modern-button">Order Here</button>
+            </div>
+            <div id="restaurant-image">
+                <img src="./images/hamburger-web-devs-mmks.png" alt="Restaurant">
+                <div class="image-overlay">
+                    <span class="overlay-text">Savor the flavors of our passion</span>
+                </div>
+            </div>
+            <div class="restaurant-text">
+                <h3>Order with Ease</h3>
+                <p>Experience the convenience of ordering your favorite dishes.</p>
+            </div>
+        </section>
+
+        <div class="order-process-overview">
+            <div class="order-process">
+                <span class="icon">
+                    <img src="./images/pasta.jpg" alt="Pasta">
+                </span>
+                <h3>Choose</h3>
+                <p>Select your favorite dishes.</p>
+            </div>
+            <div class="order-process">
+                <span class="icon">
+                    <img src="./images/risotto.jpg" alt="Risotto">
+                </span>
+                <h3>Order</h3>
+                <p>Use our website to experience a smooth online ordering process.</p>
+            </div>
+            <div class="order-process">
+                <span class="icon">
+                    <img src="./images/pizza.jpg" alt="Pizza">
+                </span>
+                <h3>Pay</h3>
+                <p>Our payment service ensures a seamless and hassle-free process.</p>
+            </div>
+        </div>
+
+        <div class="original-taste">
+            <div class="content">
+                <h2>Original Taste</h2>
+                <p>Feel excited to taste our amazing food and order online now.</p>
+              
+                <a href="menu.html" class="button">Order Online</a>
+            </div>
+        </div>
+        
+
+        <section class="statistics">
+            <div class="container">
+                <h2 class="section-header">We Like Numbers. How About You?</h2>
+                <p class="section-description">We have served amazing people who appreciate and love our food. Our success is bigger with you.</p>
+                <div class="statistics-wrapper">
+                    <div class="statistic">
+                        <span class="statistic-number">78,888</span>
+                        <span class="statistic-text">Happy Customers</span>
+                    </div>
+                    <div class="statistic">
+                        <span class="statistic-number">50</span>
+                        <span class="statistic-text">Dishes</span>
+                    </div>
+                    <div class="statistic">
+                        <span class="statistic-number">100,000</span>
+                        <span class="statistic-text">Orders</span>
+                    </div>
+                    <div class="statistic">
+                        <span class="statistic-number">10,000</span>
+                        <span class="statistic-text">Daily Visitors</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="background-image"></div>
+            <div class="about-us-content">
+                <h2>About Us</h2>
+                <h1>The Restaurant That Never Existed</h1>
+                <p>Welcome to Restaurantista - where culinary delights meet the digital realm. Our story begins with a passion for exceptional food and a vision to bring delectable flavors directly to your doorstep. As a fully online restaurant, we have reimagined the dining experience, eliminating the need for physical locations and embracing the convenience of the virtual world.</p>
+                <p>At Restaurantista, we understand the fast-paced nature of modern life. With this in mind, we set out to create an innovative platform that seamlessly connects food lovers with a diverse menu of tantalizing dishes, all available at the click of a button.</p>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-form">
+                <label for="emailaddress">Email</label>
+                <input type="email" name="emailaddress" id="emailaddress" required>
+                
+                <label for="newsletter" style="display: inline-block; margin-right: 10px;">Subscribe to our newsletter</label>
+                <input type="checkbox" id="newsletter" name="newsletter" style="display: inline-block; vertical-align: middle; margin-right: 10px;">
+                
+                <button type="submit" style="display: inline-block; margin-left: 10px; padding: 10px 20px; border: none; background-color: #fff; color: #FF8000; border-radius: 10px; font-size: 18px; cursor: pointer;">Subscribe</button>
+            </form>
+            <p id="message-container"></p>
+        </section>
+
+        <section class="location-section">
+            <div class="location">
+                <div class="address">
+                    <h2>Location</h2>
+                    <p>123 Main St.</p>
+                    <h2>Call Us</h2>
+                    <a href="tel:045000000">045-000-000</a>
+                    <h2>Hours of Operation</h2>
+                    <p>24/7</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23968.346267495526!2d19.802287845385756!3d41.329672151305346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350310470fac5db%3A0x40092af10653720!2sTirana!5e0!3m2!1sen!2s!4v1724179583036!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="video_content">
+                <h2 class="video_header">Turn Your Home into a Restaurant</h2>
+                <p class="video_text">Are you the kind of person who relishes the joy of savoring delicious food in the comfort of your own home? If you prefer to escape the hustle and bustle of overcrowded restaurants, say goodbye to the stress of making reservations, and indulge in the convenience of dining at your own pace, then you've come to the right place.</p>
+                <div class="video_player">
+                    <video class="video_iframe" src="./images/promo-video-restaurantista.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h1>Testimonials</h1>
+                <div class="testimonial-container">
+                    <div class="testimonial-text">
+                        <p>"The best way to give any testimonial a boost is by adding a compelling summary or sub-headline above it. This could be as simple as pulling a powerful quote from a longer testimonial or creating your own copy that nicely sums up the value of the testimonial."</p>
+                        <hr>
+                        <div class="testimonial-box">
+                            <img src="./images/person1.jpg" alt="Joana Doe">
+                            <div class="testimonial-content">
+                                <p class="author-name">Joana Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-text">
+                        <p>"Hi there, Bob. I'm writing to ask if you wouldn't mind giving us a short testimonial for our website. We're updating a few pages, and I'm hoping to add something from you. It would link back to your site, so it's actually a good thing for your SEO."</p>
+                        <hr>
+                        <div class="testimonial-box">
+                            <img src="./images/person2.jpg" alt="Mike Johnson">
+                            <div class="testimonial-content">
+                                <p class="author-name">Mike Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-text">
+                        <p>"I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage. I never have any problem at all."</p>
+                        <hr>
+                        <div class="testimonial-box">
+                            <img src="images/person3.jpg" alt="Jane Smith">
+                            <div class="testimonial-content">
+                                <p class="author-name">Jane Smith</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-text">
+                        <p>"A testimonial is an honest endorsement of your product or service that usually comes from a customer, colleague, or peer who has benefited from or experienced success as a result of the work you did for them."</p>
+                        <hr>
+                        <div class="testimonial-box">
+                            <img src="./images/person4.jpg" alt="Mary Johnson">
+                            <div class="testimonial-content">
+                                <p class="author-name">Mary Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+    <div id="footer-placeholder"></div>
+
+    <script src="templates/templates/templates/template.js"></script>
+
+    
+    <script src="ajax.js"></script>
+    <script src="submit-form.js"></script>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

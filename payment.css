@@ -1,0 +1,144 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+#payment-form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    background: #c3c3c3;
+    width: 100%;
+    max-width: 600px; /* Madhësia maksimale e formës */
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff8000;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+button {
+    background: #ff8000;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: 300ms;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #f37900;
+}
+
+/* Footer-i */
+footer {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1 1 300px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    color: #FF8000;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-column p {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.social-media-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fefefe;
+    border-radius: 50%;
+    margin-right: 5px;
+    color: #ff8000;
+    text-align: center;
+    line-height: 30px;
+}
+
+.social-media-icons a:hover {
+    background-color: #FF8000;
+    color: white;
+}
+
+/* Footer-i në fund të faqes */
+.footer-bottom {
+    background-color: #FF8000;
+    color: white;
+    padding: 15px 0;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}

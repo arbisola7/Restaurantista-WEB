@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantista - Menu</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="templates/templates/templates/header-template.css">
+<link rel="stylesheet" href="templates/templates/templates/footer-template.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div style="width: 65%; display: inline-block; vertical-align: top" id="menu-div">
+            <img id="menu-image" src="https://cdn.magicdecor.in/com/2023/09/03144554/3d-wallpaper-for-restaurant-wall-8.jpg" alt="Menu" />
+            <h2>Menu</h2>
+            <select name="menu" id="menu" onchange="updateMenuItems()">
+                <option value="pasta">Pasta</option>
+                <option value="pizza">Pizza</option>
+                <option value="desserts">Desserts</option>
+            </select>
+            <input type="text" id="search" placeholder="Search menu items..." />
+            <ul id="menu-items"></ul>
+        </div>
+        <div style="width: 35%; display: inline-block; vertical-align: top">
+            <div>
+                <h2>Add to Basket</h2>
+                <ul id="basket-items"></ul>
+                <div id="basket-message" style="display: none">
+                    Sorry, you can't order yet. Restaurantista has set a minimum order
+                    amount of 20,00 € (excl. delivery costs).
+                </div>
+                <p>Subtotal: <span id="subtotal-price">0.00</span></p>
+                <p>Tax (10%): <span id="tax-price">0.00</span></p>
+                <p>Total: <span id="totali-price">0.00</span></p>
+                <button id="checkout">Pay</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="templates/templates/templates/template.js"></script>
+    <script src="menu.js"></script>
+    <script src="ajax.js"></script>
+    <script src="main.js"></script>
+    <script src="submit-form.js"></script>
+</body>
+</html>

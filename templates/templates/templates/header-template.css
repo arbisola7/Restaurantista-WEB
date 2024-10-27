@@ -1,0 +1,109 @@
+/* Stilet për navigimin në desktop */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff8000;
+}
+
+.burger {
+    display: none; /* Fshihet në desktop */
+}
+
+/* Media query për dizajnin responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Fshihet në mobile dhe shfaqet me burger menu */
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Stilizimi i ikonës burger */
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    /* Shfaqja e menu-së burger në modalitetin aktiv */
+    .nav-active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .nav-active .line2 {
+        opacity: 0;
+    }
+
+    .nav-active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Stilizimi për menynë e navigimit kur është aktive në mobile */
+    .nav-active ~ .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px; /* Rregulloje sipas nevojës për të shmangur mbivendosjen */
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: max-height 0.3s ease;
+        max-height: 500px;
+        overflow: hidden;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}

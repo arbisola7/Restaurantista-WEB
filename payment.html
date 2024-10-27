@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantista - Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="templates/templates/templates/header-template.css">
+
+
+    <link rel="stylesheet" href="templates/templates/templates/header-template.css">
+<link rel="stylesheet" href="templates/templates/templates/footer-template.css">
+
+
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <form id="payment-form">
+            <label for="name">Name on card:</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Please enter a valid name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" pattern="[0-9]{16}" title="Card number must be 16 digits" required>
+
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" name="cvc" pattern="[0-9]{3,4}" title="CVC must be 3 or 4 digits" required>
+
+            <label for="expiration-date">Expiration date</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" title="Expiration date must be in MM/YY format" required maxlength="5">
+
+            <button type="submit" id="pay-button">Pay</button>
+        </form>
+
+        <div id="success-message" style="display: none;">Payment successful!</div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="templates/templates/templates/template.js"></script>
+    <script src="payment.js"></script>
+   
+    <script src="ajax.js"></script>
+    <script src="main.js"></script>
+    <script src="submit-form.js"></script>
+</body>
+</html>
